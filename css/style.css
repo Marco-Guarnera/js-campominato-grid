@@ -11,6 +11,11 @@ button {
     cursor: pointer;
 }
 
+main {
+    background-color: #7FFFD4;
+    padding: 75px 0;
+}
+
 /* Utilities */
 
 /* Button */
@@ -25,7 +30,7 @@ button {
 /* Wrapper */
 .wrapper {
     margin: 0 auto;
-    max-width: 750px;
+    max-width: 1080px;
 }
 
 /* Flexbox */
@@ -49,13 +54,14 @@ button {
 
 /* Grid */
 #grid {
-    background-color: #7FFFD4;
-    padding: 75px 0;
+    height: 750px;
+    width: 750px;
+    margin: 0 auto;
 }
 
 /* Cells */
 #grid .cell {
-    height: 75px;
+    height: calc(100% / 10);
     flex-basis: calc(100% / 10);
     border: 1px solid #000;
     font-size: 25px;
