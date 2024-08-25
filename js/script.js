@@ -29,6 +29,8 @@ buttonElement.addEventListener("click", function () {
     for (let i = 0; i < totalCells; i++) {
         // Utilizzo la funzione per creare una cella
         const cell = createNode("div", "cell");
+        // Aggiungo il numero della cella
+        cell.append(i + 1);
         // Aggiungo la cella nel DOM
         gridElement.appendChild(cell);
     }
