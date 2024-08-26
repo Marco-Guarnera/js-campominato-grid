@@ -31,10 +31,13 @@ buttonElement.addEventListener("click", function () {
         const cell = createNode("div", "cell");
         // Aggiungo il numero della cella
         cell.append(i + 1);
+        // Aggiungo un EventListener alla cella
+        cell.addEventListener("click", function () {
+            cell.classList.toggle("clicked");
+            // Stampo il numero della cella in console
+            console.log(cell.innerText);
+        });
         // Aggiungo la cella nel DOM
         gridElement.appendChild(cell);
     }
 });
-
-// Fase di raccolta dati
-// Fase di produzione

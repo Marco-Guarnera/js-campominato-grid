@@ -61,6 +61,7 @@ main {
 
 /* Cells */
 #grid .cell {
+    cursor: pointer;
     height: calc(100% / 10);
     flex-basis: calc(100% / 10);
     border: 1px solid #000;
@@ -69,6 +70,10 @@ main {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+}
+
+#grid .cell.clicked {
+    background-color: #00F;
 }
 
 /* Main Footer */
